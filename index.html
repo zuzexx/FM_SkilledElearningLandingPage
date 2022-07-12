@@ -5,37 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <linnk rel="stylesheet" href="scss/main.css"></linnk>
-  
+  <link rel="stylesheet" href="scss/main.css"></linnk>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+    </style>
   <title>Frontend Mentor | Skilled e-learning landing page</title>
 </head>
 <body>
 
   <main>
-  <img src="assets/logo-dark.svg" al="skilled written in dark bold letters">
-  <button id="started-first">Get Started</button>
- 
+    <div id="first-div">
+    <header>
+  <img id="img-skilled" src="assets/logo-dark.svg" al="skilled written in dark bold letters" height="48px">
+  <button id="started-first">Get Started</button></header>
 
   <h1>Maximize skill, minimize budget</h1>
 
-<p>  Our modern courses across a range of in-demand skills will give you the 
+<p id="main-p">  Our modern courses across a range of in-demand skills will give you the 
   knowledge you need to live the life you want.</p>
 
   <button id="started-second">Get Started</button>
 
-  <div id="pictures">
+  <img id="main-image" src="assets/image-hero-mobile.png">
 
-  </div>
+  <div id="check-container">
+  <p id="check">Check out our most popular courses!</p></div></div>
 
-  <div id="check">Check out our most popular courses!</div>
-  
+
+  <div id="cont-all">
   <div id="container">
-    <img src="assets/icon-animation.svg" alt="icon for animation" id="" icon>
+    <img src="assets/icon-animation.svg" alt="icon for animation" id="icon" >
     <h2>Animation</h2>
 <p>  Learn the latest animation techniques to create stunning motion 
   design and captivate your audience.</p>
  <span> Get Started</span></div>
 
+ 
  <div id="container">
   <img src="assets/icon-design.svg" alt="icon for design" id="icon">
   <h2>Design</h2>
@@ -43,6 +48,7 @@
   how the web looks.</p>
   <span> Get Started</span></div>
 
+  
   <div id="container">
     <img src="assets/icon-photography.svg" alt="icon for Photography" id="icon">
     <h2>Photography</h2>
@@ -62,15 +68,16 @@
     <h2>Business</h2>
     <p> A step-by-step playbook to help you start, scale, and sustain your business 
   without outside investment.</p>
-  <span> Get Started</span></div>
+  <span> Get Started</span></div></div>
 
   
   
+
+<div id="footer">
+  <img id="img-skilled" src="assets/logo-light.svg">
+  <button id="started-third">Get Started</button>
+</div>
 </main>
-<footer>
-  <img src="assets/logo-light.svg">
-  <button>Get Started</button>
-</footer>
 </body>
 <script src="script/script.js"></script>
 </html>

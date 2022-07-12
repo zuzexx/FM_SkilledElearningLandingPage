@@ -1,1 +1,189 @@
 @import "./variables";
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+
+@mixin flex(){
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-self: center;
+}
+
+@mixin paragraphs($font-weight, $font-size){
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+
+@mixin buttonStyle(){
+    height: 48px;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight:700;
+    border:none;
+
+    &:hover{
+        cursor: pointer;
+        font-weight: 800;
+        padding-right:32px;
+        padding-left: 32px;
+        height:50px;
+    }
+}
+
+@mixin tablet(){
+    @media(min-width:$tablet){
+        @content;
+    }
+}
+
+@mixin desktop(){
+    @media(min-width:$desktop){
+        @content;
+    }
+}
+
+body{
+    @include flex();
+    background-color: #ededed;
+    @include tablet(){
+       // background-color: red;
+    }
+    
+}
+
+main{
+    @include flex();
+    flex-direction: column; 
+    //margin-left: 10%;
+    font-family: $font-family;
+}
+
+#first-div{
+    background-color: $white;
+    @include flex();
+    flex-direction: column;
+    width: 343px;
+    border-radius: 20px;
+}
+
+header{
+    @include flex();
+    width: 343px;
+}
+
+#img-skilled{
+    margin-left: 1vw;
+    height: 25px;
+}
+
+#started-first{
+    @include buttonStyle();
+    //justify-content: right;
+    background-color: $dark-blue;
+    color: $white;
+    height: 40px;
+    margin-left: 20vw;
+    margin-top: 5px;
+}
+
+h1{
+    @include paragraphs(800,56px);
+    max-width:327px; 
+    
+}
+
+#main-p{
+    @include paragraphs(500,16px);
+    color:gray;
+    max-width:327px; 
+}
+
+#started-second{
+    @include buttonStyle();
+    background: $first-gradient;
+    color: $white;
+    margin-left: -190px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+
+}
+
+#main-image{
+    width:327px;
+    
+}
+
+#check-container{
+    background: $first-gradient;
+    width:310px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+#check{
+    @include paragraphs(800, 24px);
+    color: $white;
+    margin-left: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+h2{
+    @include paragraphs(800, 24px);
+    
+}
+
+#cont-all{
+    max-width: 343px;
+}
+
+#container{
+    margin-top: 40px;
+    background-color: $white;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom:40px;
+}
+#icon{
+    margin-top: -60px;
+    width: 50px;
+}
+
+#container p{
+    @include paragraphs(500, 16px);    
+    color:$gray;
+}
+
+span{
+    color: $hot-pink;
+    font-weight: 700;
+    &:hover{
+        cursor: pointer;
+        font-weight:800;
+        font-size: 20px;
+    }
+}
+#started-third{
+    @include buttonStyle();
+    background: $second-gradient;
+    color: $white;
+    height: 40px;
+    margin-left: 20vw;
+    margin-top: 5px;
+
+    
+}
+#footer{
+    background-color: $dark-blue;
+    height: 48px;
+    margin-top:40px;
+    border-radius: 20px;
+    padding:20px;
+}
+
+

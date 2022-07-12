@@ -16,8 +16,6 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -37,27 +35,22 @@ Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to t
 
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/zuzexx/FM_SkilledElearningLandingPage)
+- Live Site URL: [Vercel](https://your-live-site-url.com)
+-Frontendmentor URL: [FrontendMentor]()
 
 ## My process
+
+I did the mobile version first. I used the Figma files to see how the project should look. I started with HTML and then used SCSS accordingly. It looked like the main  background is a light gray colour, which was not given with other colours. I googled a really light grey colour and used the hex number for the background. Body background was white and ithout any `border-radius`. I did no like the look of it, since the buttons, icons and pictures are all more round. I decided to deviate from the mockup and included `border-radius:20px` for all of the containers. I prefer the more softer look.
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SCSS
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
