@@ -48,9 +48,13 @@
 
 body{
     @include flex();
-    background-color: #ededed;
+    background: $background-gradient;
+   // background-color: #ededed;
     @include tablet(){
-       // background-color: red;
+       
+    }
+    @include desktop(){
+        
     }
     
 }
@@ -60,6 +64,17 @@ main{
     flex-direction: column; 
     //margin-left: 10%;
     font-family: $font-family;
+
+    @include tablet(){
+        width: 768px;
+        background-color: white;
+        border-radius: 20px;
+        margin:auto;   
+    }
+    @include desktop(){
+        width: 1440px;
+        background: $background-gradient;
+    }
 }
 
 #first-div{
@@ -73,6 +88,14 @@ main{
 header{
     @include flex();
     width: 343px;
+    @include tablet(){
+        width: 768px;
+        background-color: $white;
+        border-radius: 20px;
+    }
+    @include desktop(){
+        width: 1440px;
+    }
 }
 
 #img-skilled{
@@ -82,12 +105,18 @@ header{
 
 #started-first{
     @include buttonStyle();
-    //justify-content: right;
     background-color: $dark-blue;
     color: $white;
     height: 40px;
-    margin-left: 20vw;
+    margin-left: 100px;
     margin-top: 5px;
+
+    @include tablet(){
+        margin-left:500px;
+    }
+    @include desktop(){
+        margin-left: 1150px;
+    }
 }
 
 h1{
@@ -114,6 +143,9 @@ h1{
 
 #main-image{
     width:327px;
+    @include tablet(){
+        
+    }
     
 }
 
@@ -176,6 +208,13 @@ span{
     margin-left: 20vw;
     margin-top: 5px;
 
+    @include tablet(){
+        margin-left:500px;
+    }
+    @include desktop(){
+        margin-left: 1150px;
+    }
+
     
 }
 #footer{
@@ -184,6 +223,15 @@ span{
     margin-top:40px;
     border-radius: 20px;
     padding:20px;
+
+    @include tablet(){
+        width: 768px;
+    }
+    @include desktop(){
+        width: 1400px;
+    }
 }
+
+
 
 

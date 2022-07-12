@@ -43,7 +43,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
-I did the mobile version first. I used the Figma files to see how the project should look. I started with HTML and then used SCSS accordingly. It looked like the main  background is a light gray colour, which was not given with other colours. I googled a really light grey colour and used the hex number for the background. Body background was white and ithout any `border-radius`. I did no like the look of it, since the buttons, icons and pictures are all more round. I decided to deviate from the mockup and included `border-radius:20px` for all of the containers. I prefer the more softer look.
+I did the mobile version first. I used the Figma files to see how the project should look. I started with HTML and then used SCSS accordingly. I decided to change the look a litle bit and made the main background look like a gradient. Body background is white and without any `border-radius`. I did no like the look of it, since the buttons, icons and pictures are all more round. I decided to deviate from the mockup and included `border-radius:20px` for all of the containers. I prefer the more softer look.
 
 ### Built with
 
