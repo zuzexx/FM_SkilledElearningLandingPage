@@ -39,7 +39,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Solution URL: [GitHub](https://github.com/zuzexx/FM_SkilledElearningLandingPage)
 - Live Site URL: [Vercel](https://your-live-site-url.com)
--Frontendmentor URL: [FrontendMentor]()
+- Frontendmentor URL: [FrontendMentor]()
 
 ## My process
 
