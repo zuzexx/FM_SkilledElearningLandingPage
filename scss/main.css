@@ -111,6 +111,8 @@ h3 {
 @media (min-width: 1140px) {
   #first-section {
     padding: 150px;
+    width: 800px;
+    margin-left: 2%;
   }
 }
 
@@ -144,14 +146,16 @@ h3 {
 }
 @media (min-width: 1000px) {
   #main-img {
+    top: 70px;
     height: 940px;
-    min-width: 800px;
+    min-width: 700px;
   }
 }
 @media (min-width: 1140px) {
   #main-img {
     bottom: 0;
-    left: calc(50% + 100px);
+    left: 80%;
+    min-width: 900px;
   }
 }
 
@@ -183,6 +187,12 @@ picture img {
 #courses {
   background: linear-gradientlinear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
 }
+@media (min-width: 1000px) {
+  #courses {
+    max-width: 1100px;
+    margin-left: 20%;
+  }
+}
 
 #course-containers {
   display: flex;
@@ -199,14 +209,7 @@ picture img {
 }
 @media (min-width: 1000px) {
   #course-containers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 80px 30px;
-    padding-top: 30px;
-    padding-bottom: 150px;
-    max-width: 350px;
-    min-height: 320px;
   }
 }
 
@@ -227,6 +230,14 @@ picture img {
     padding: 60px 20px 30px 30px;
   }
 }
+@media (min-width: 1000px) {
+  .heading {
+    gap: 80px 30px;
+    max-width: 350px;
+    min-height: 322px;
+    padding: 50px 32px 40px;
+  }
+}
 
 #course {
   width: 340px;
@@ -236,10 +247,32 @@ picture img {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   box-shadow: 0px 20px 45px rgba(6, 22, 141, 0.05);
+  padding-bottom: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#course::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 28px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
 }
 @media (min-width: 780px) {
   #course {
     padding: 60px 20px 30px 30px;
+    left: 32px;
+  }
+}
+@media (min-width: 1000px) {
+  #course {
+    max-width: 350px;
+    min-height: 322px;
+    padding: 50px 32px 40px;
   }
 }
 #course p {
@@ -257,9 +290,20 @@ picture img {
 #course span {
   margin-left: 30px;
   font-weight: 700;
+  background: linear-gradient(#ff6f48, #f02aa6);
+  -webkit-background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+}
+#course span:hover {
+  cursor: pointer;
+  font-size: 17px;
 }
 #course #icon {
   margin-left: 30px;
+  width: 50px;
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 #btn-orange {
