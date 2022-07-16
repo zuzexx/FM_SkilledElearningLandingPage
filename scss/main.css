@@ -299,7 +299,36 @@ picture img {
   cursor: pointer;
   font-size: 17px;
 }
-#course #icon {
+
+#icon-animation {
+  margin-left: 30px;
+  width: 50px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#icon-design {
+  margin-left: 30px;
+  width: 50px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#icon-photography {
+  margin-left: 30px;
+  width: 50px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#icon-crypto {
+  margin-left: 30px;
+  width: 50px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#icon-business {
   margin-left: 30px;
   width: 50px;
   margin-bottom: 20px;
@@ -343,7 +372,7 @@ picture img {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  background: linear-gradient(#ff6f48, #f02aa6);
+  background: linear-gradient(#4851ff, #f02aa6);
 }
 #btn-bottom:hover {
   filter: brightness(70%);
