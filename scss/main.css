@@ -190,7 +190,7 @@ picture img {
 @media (min-width: 1000px) {
   #courses {
     max-width: 1100px;
-    margin-left: 20%;
+    margin-left: 10%;
   }
 }
 
